@@ -7,7 +7,8 @@ parameter passed to createGetFunction when it was called.
 */
 function createGetFunction(elementToReturn) {
   // PLACE YOUR CODE BELOW
-
+  const getSecondElement = (array) => array[elementToReturn-1]
+  return getSecondElement
   // PLACE YOUR CODE ABOVE
 }
 
