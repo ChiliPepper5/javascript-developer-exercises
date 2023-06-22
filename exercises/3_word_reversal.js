@@ -10,7 +10,12 @@ let statement = 'Penn Mutual sells life insurance'
 function reverseLetters(str) {
   // PLACE YOUR CODE BELOW
 
+  let statementArr = str.split(' ')
+  return statementArr.map(string => {
+    return string.split('').reverse().join('')
+  }).join(' ')
   // PLACE YOUR CODE ABOVE
+
 }
 
 let reversedWords = reverseLetters(statement)

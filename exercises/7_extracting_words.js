@@ -22,7 +22,8 @@ before the next comment block.
 */
 
 // PLACE YOUR CODE BELOW
-
+const pulledWords = words.map(word => word[1]+word[2])
+wordList = pulledWords.join(', ')
 // PLACE YOUR CODE ABOVE
 
 /*
