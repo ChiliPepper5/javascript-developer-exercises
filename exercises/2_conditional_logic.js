@@ -12,6 +12,21 @@ function paintMixer(color1, color2) {
   The order of the params should not matter.
   */
   // PLACE YOUR CODE BELOW
+  // Creating a map using Map object
+    let combinations = new Map()
+    let combination = 'unknown';
+    // Adding values to the map
+    combinations.set('purple', ["blue", 'red']);
+    combinations.set('brown', ['red', 'green']);
+    combinations.set('orange', ['red', 'yellow']);
+    combinations.set('green', ['blue', 'yellow']);
+  
+  combinations.forEach((values,key) => {
+    //console.log("****")
+    if(values.includes(color1) && values.includes(color2))
+      combination=key;
+  });
+  return combination;
 
   // PLACE YOUR CODE ABOVE
 }
