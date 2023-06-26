@@ -22,7 +22,10 @@ before the next comment block.
 */
 
 // PLACE YOUR CODE BELOW
-
+wordList=""
+words.forEach(word => wordList+= word.substring(1,3) + ", ")
+//console.log(wordList.length)
+wordList = wordList.substring(0,wordList.length-2)
 // PLACE YOUR CODE ABOVE
 
 /*
@@ -34,4 +37,4 @@ at, on, in, up, to
 */
 
 wordList === 'at, on, up, in, to' && console.log('Success')
-console.log(wordList)
+//console.log(wordList)

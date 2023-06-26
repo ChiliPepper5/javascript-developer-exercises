@@ -7,7 +7,9 @@ parameter passed to createGetFunction when it was called.
 */
 function createGetFunction(elementToReturn) {
   // PLACE YOUR CODE BELOW
-
+  return function(...elements) {
+    return elements[0][elementToReturn-1];
+  };
   // PLACE YOUR CODE ABOVE
 }
 

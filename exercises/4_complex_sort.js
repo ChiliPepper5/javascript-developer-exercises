@@ -29,7 +29,19 @@ let widgets = [
 
 function specialSort(el1, el2) {
   // PLACE YOUR CODE BELOW
-
+  //console.log("el1")
+  //console.log(el1)
+  //console.log("el2")
+  //console.log(el2)
+  //console.log("***")
+  if(typeof el1.sortKey === 'string' && typeof el2.sortKey === 'number') return -1
+  if(typeof el1.sortKey === 'number' && typeof el2.sortKey === 'string') return 1
+  if(typeof el1.sortKey === 'string' && typeof el2.sortKey === 'string') {
+    return parseInt(el2.sortKey) - parseInt(el1.sortKey)
+  }
+  if(typeof el1.sortKey === 'number' && typeof el2.sortKey === 'number') {
+    return el1.sortKey -el2.sortKey
+  }
   // PLACE YOUR CODE ABOVE
 }
 
