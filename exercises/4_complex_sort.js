@@ -30,6 +30,25 @@ let widgets = [
 function specialSort(el1, el2) {
   // PLACE YOUR CODE BELOW
 
+  const sortKey1 = el1.sortKey;
+    const sortKey2 = el2.sortKey;
+
+    if (typeof sortKey1 === 'string' && typeof sortKey2 === 'string') {
+       return sortKey2.localeCompare(sortKey1);
+    }
+
+    else if (typeof sortKey1 === 'string' && typeof sortKey2 === 'number') {
+       return -1;
+    }
+
+    else if (typeof sortKey1 === 'number' && typeof sortKey2 === 'string') {
+       return 1;
+    }
+
+    else {
+        return sortKey1 - sortKey2;
+    }
+  
   // PLACE YOUR CODE ABOVE
 }
 
