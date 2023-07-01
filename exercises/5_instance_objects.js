@@ -3,7 +3,7 @@ class Tank {
     console.log(`Tank attacks for ${this.power()} damage!`)
   }
   power() {
-    return 3
+    return 7
   }
 }
 
